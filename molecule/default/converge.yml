@@ -1,7 +1,2 @@
 ---
-- name: Converge
-  hosts: all
-  tasks:
-    - name: "Include ansible_lint_issue"
-      include_role:
-        name: "ansible_lint_issue"
+- import_playbook: erikgb.ansible_lint_issue.debug
