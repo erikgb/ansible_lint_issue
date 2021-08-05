@@ -1,0 +1,8 @@
+---
+- name: Simple debug playbook
+  gather_facts: false
+  hosts: all
+  tasks:
+    - name: Show debug message
+      debug:
+        msg: "Kilroy was here"
